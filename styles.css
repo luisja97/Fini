@@ -344,3 +344,16 @@ body { background: #f7f4ef; }
   background: linear-gradient(180deg, #d4b56a, #b08a4a);
   color: #16110a !important;
 }
+.hero {
+  background:
+    linear-gradient(180deg, rgba(16,24,22,.15) 20%, rgba(16,24,22,.72) 100%),
+    url("images/hero.jpg") center/cover !important;
+}
+.hero .kicker,
+.hero .tag,
+.hero .lede,
+.hero h1 {
+  color: #fff !important;
+  text-shadow: 0 8px 24px rgba(0,0,0,.45);
+}
+.hero .tag { color: #f0e2c0 !important; }
