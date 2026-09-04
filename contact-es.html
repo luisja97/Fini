@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto | Fino Home Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lang-gate" id="lang-gate" hidden>
+    <div class="lang-card">
+      <p class="kicker">Fino Home Detail</p>
+      <h2>Language / Idioma</h2>
+      <p>Choose English or Spanish.<br>Elige inglés o español.</p>
+      <div class="lang-actions">
+        <button class="btn gold" type="button" data-lang="en">English</button>
+        <button class="btn" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+  <div class="topbar"><div class="wrap"><span>Confirmamos alcance y mandamos precio claro</span></div></div>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index-es.html"><strong>Fino</strong><span>Home Detail</span></a>
+      <button class="menu-btn" aria-label="Menú">☰</button>
+      <nav class="desk">
+        <a href="services-es.html">Servicios</a>
+        <a href="areas-es.html">Zonas</a>
+        <a href="reviews-es.html">Reseñas</a>
+        <a href="about-es.html">Nosotros</a>
+        <a href="contact-es.html">Contacto</a>
+        <a href="contact.html" onclick="localStorage.setItem('fino-lang','en')">English</a>
+        <a class="btn" href="contact-es.html">Agendar visita</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Contacto</p>
+        <h2>Agenda una visita.</h2>
+        <p class="section-lead">Dinos la casa, el servicio y el parking. Las fotos ayudan. Respondemos con precio fijo.</p>
+        <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+          <input type="hidden" name="_subject" value="Cotización Fino Home Detail" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="row-2">
+            <div><label for="name">Nombre</label><input id="name" name="name" required /></div>
+            <div><label for="phone">Teléfono</label><input id="phone" name="phone" required /></div>
+          </div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <div class="row-2">
+            <div><label for="city">Ciudad</label><input id="city" name="city" placeholder="Menlo Park" required /></div>
+            <div><label for="size">Recámaras / baños</label><input id="size" name="size" placeholder="3 / 2" /></div>
+          </div>
+          <label for="service">Servicio</label>
+          <select id="service" name="service">
+            <option>Limpieza profunda + vapor</option>
+            <option>Recurrente después de una profunda</option>
+            <option>Mudanza entrada / salida</option>
+            <option>Solo extras</option>
+          </select>
+          <label for="notes">Parking, mascotas, notas</label>
+          <textarea id="notes" name="notes" placeholder="¿Entrada? ¿Permiso de calle? ¿Perros?"></textarea>
+          <button class="btn" type="submit" style="margin-top:16px">Enviar cotización</button>
+        </form>
+      </div>
+      <aside class="card steam">
+        <h3>Más rápido que el form</h3>
+        <p>Manda por texto la ciudad, recámaras/baños y 4 fotos de cocina, baños y pisos.</p>
+        <p style="margin:16px 0"><strong>Teléfono:</strong> pon tu número aquí</p>
+        <p>Se habla español.</p>
+      </aside>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Limpieza profunda refinada. Vapor incluido.</em></div></div></footer>
+  <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
+  <div class="sticky-book"><a class="btn gold" href="contact-es.html">Agendar visita</a></div>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

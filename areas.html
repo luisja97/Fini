@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Areas | Fino Home Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="lang-gate" id="lang-gate" hidden>
+    <div class="lang-card">
+      <p class="kicker">Fino Home Detail</p>
+      <h2>Language / Idioma</h2>
+      <p>Choose English or Spanish.<br>Elige inglés o español.</p>
+      <div class="lang-actions">
+        <button class="btn gold" type="button" data-lang="en">English</button>
+        <button class="btn" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="topbar"><div class="wrap"><span>Drive time is part of the quote</span><span>Se habla español</span></div></div>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index.html"><strong>Fino</strong><span>Home Detail</span></a>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <nav class="desk">
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index-es.html" onclick="localStorage.setItem('fino-lang','es')">Español</a>
+        <a class="btn" href="contact.html">Book a walkthrough</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">Areas</p>
+      <h2>Peninsula first.</h2>
+      <p class="section-lead">We start in San Mateo County so the work stays detailed and the drive does not eat the job. Other Bay cities are quote-only.</p>
+      <div class="grid-3" style="margin-top:24px">
+        <article class="card"><h3>Core</h3><p>Atherton, Menlo Park, Redwood City, San Mateo, Burlingame, Hillsborough, San Carlos, Belmont, Foster City, Palo Alto.</p></article>
+        <article class="card"><h3>By quote</h3><p>Selected San Francisco neighborhoods and South Bay homes when parking and timing still work.</p></article>
+        <article class="card steam"><h3>Parking matters</h3><p>If the house is a long walk from legal parking, we price that time in. Tell us in the form.</p></article>
+      </div>
+      <p style="margin-top:28px"><a class="btn" href="contact.html">See if we cover your street</a></p>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Refined deep cleaning. Steam included.</em></div></div></footer>
+  <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

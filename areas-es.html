@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zonas | Fino Home Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lang-gate" id="lang-gate" hidden>
+    <div class="lang-card">
+      <p class="kicker">Fino Home Detail</p>
+      <h2>Language / Idioma</h2>
+      <p>Choose English or Spanish.<br>Elige inglés o español.</p>
+      <div class="lang-actions">
+        <button class="btn gold" type="button" data-lang="en">English</button>
+        <button class="btn" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+  <div class="topbar"><div class="wrap"><span>El traslado entra en la cotización</span></div></div>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index-es.html"><strong>Fino</strong><span>Home Detail</span></a>
+      <button class="menu-btn" aria-label="Menú">☰</button>
+      <nav class="desk">
+        <a href="services-es.html">Servicios</a>
+        <a href="areas-es.html">Zonas</a>
+        <a href="reviews-es.html">Reseñas</a>
+        <a href="about-es.html">Nosotros</a>
+        <a href="contact-es.html">Contacto</a>
+        <a href="areas.html" onclick="localStorage.setItem('fino-lang','en')">English</a>
+        <a class="btn" href="contact-es.html">Agendar visita</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">Zonas</p>
+      <h2>Peninsula primero.</h2>
+      <p class="section-lead">Empezamos en el condado de San Mateo para que el trabajo siga detallado y el manejo no se coma el trabajo. Otras ciudades del Bay solo con cotización.</p>
+      <div class="grid-3" style="margin-top:24px">
+        <article class="card"><h3>Núcleo</h3><p>Atherton, Menlo Park, Redwood City, San Mateo, Burlingame, Hillsborough, San Carlos, Belmont, Foster City, Palo Alto.</p></article>
+        <article class="card"><h3>Con cotización</h3><p>Algunos barrios de San Francisco y South Bay cuando el parking y el horario todavía funcionan.</p></article>
+        <article class="card steam"><h3>El parking cuenta</h3><p>Si hay que caminar mucho desde un lugar legal, ese tiempo va en el precio. Dilo en el formulario.</p></article>
+      </div>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Limpieza profunda refinada. Vapor incluido.</em></div></div></footer>
+  <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
+  <div class="sticky-book"><a class="btn gold" href="contact-es.html">Agendar visita</a></div>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

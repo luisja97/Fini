@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Fino Home Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="lang-gate" id="lang-gate" hidden>
+    <div class="lang-card">
+      <p class="kicker">Fino Home Detail</p>
+      <h2>Language / Idioma</h2>
+      <p>Choose English or Spanish.<br>Elige inglés o español.</p>
+      <div class="lang-actions">
+        <button class="btn gold" type="button" data-lang="en">English</button>
+        <button class="btn" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="topbar"><div class="wrap"><span>Owner-operated · Peninsula</span></div></div>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index.html"><strong>Fino</strong><span>Home Detail</span></a>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <nav class="desk">
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index-es.html" onclick="localStorage.setItem('fino-lang','es')">Español</a>
+        <a class="btn" href="contact.html">Book a walkthrough</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">About</p>
+      <h2>Fino means refined.</h2>
+      <p class="section-lead">Fino Home Detail is an owner-operated Peninsula shop built to clean what a standard visit misses. We do not pretend to be a ten-year award wall. We do publish a checklist, bring a steamer, and keep kitchen cloths off bathroom glass.</p>
+      <div class="grid-3" style="margin-top:24px">
+        <article class="card"><h3>Standard</h3><p>Eco / low-VOC products. HEPA vacuum. Color-coded rags. Written in-scope and out-of-scope.</p></article>
+        <article class="card steam"><h3>Steam as default</h3><p>On every deep clean: floors that allow it, showers, grout, kitchen film, tracks.</p></article>
+        <article class="card"><h3>How we grow</h3><p>Deep clean first. Recurring after trust. Same-day review ask. No fake stars.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="faq" style="padding-top:0">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details open><summary>What is the difference vs regular cleaning?</summary><p>A regular clean maintains a reset house. A Fino deep clean is the reset: baseboards, tracks, grout, steam, and a list you can hold us to.</p></details>
+      <details><summary>Is steam safe for my floors or sofa?</summary><p>Tile and most sealed stone: yes. Raw wood, waxed floors, and unsealed stone: only with approval. Fabric only if the material allows a light pass.</p></details>
+      <details><summary>Do you bring supplies?</summary><p>Yes. Steamer, HEPA vac, products, rags. You do not provide chemicals.</p></details>
+      <details><summary>Are products pet- and kid-aware?</summary><p>We use eco / low-VOC products. Still crate or separate pets that chase equipment.</p></details>
+      <details><summary>Do I need to be home?</summary><p>No, if we have access and a lockbox or keypad plan.</p></details>
+      <details><summary>Is the oven or fridge interior included?</summary><p>Exteriors yes. Interiors are add-ons.</p></details>
+      <details><summary>Se habla español?</summary><p>Sí.</p></details>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Refined deep cleaning. Steam included.</em></div></div></footer>
+  <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

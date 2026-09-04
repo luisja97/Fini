@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosotros | Fino Home Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lang-gate" id="lang-gate" hidden>
+    <div class="lang-card">
+      <p class="kicker">Fino Home Detail</p>
+      <h2>Language / Idioma</h2>
+      <p>Choose English or Spanish.<br>Elige inglés o español.</p>
+      <div class="lang-actions">
+        <button class="btn gold" type="button" data-lang="en">English</button>
+        <button class="btn" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+  <div class="topbar"><div class="wrap"><span>Operado por el dueño · Peninsula</span></div></div>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index-es.html"><strong>Fino</strong><span>Home Detail</span></a>
+      <button class="menu-btn" aria-label="Menú">☰</button>
+      <nav class="desk">
+        <a href="services-es.html">Servicios</a>
+        <a href="areas-es.html">Zonas</a>
+        <a href="reviews-es.html">Reseñas</a>
+        <a href="about-es.html">Nosotros</a>
+        <a href="contact-es.html">Contacto</a>
+        <a href="about.html" onclick="localStorage.setItem('fino-lang','en')">English</a>
+        <a class="btn" href="contact-es.html">Agendar visita</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="kicker">Nosotros</p>
+      <h2>Fino quiere decir refinado.</h2>
+      <p class="section-lead">Fino Home Detail es un taller de la Peninsula operado por el dueño, hecho para limpiar lo que una visita estándar se salta. No fingimos diez años de premios. Sí publicamos una lista, llevamos vaporera y no cruzamos paños de cocina con vidrio de baño.</p>
+    </div>
+  </section>
+  <section class="faq" style="padding-top:0">
+    <div class="wrap">
+      <h2>Preguntas</h2>
+      <details open><summary>¿En qué se diferencia de una limpieza normal?</summary><p>La normal mantiene una casa ya reiniciada. La profunda de Fino es el reset: zócalos, rieles, lechada, vapor y una lista con la que nos puedes medir.</p></details>
+      <details><summary>¿El vapor es seguro para mis pisos o el sofá?</summary><p>Loseta y la mayoría de piedra sellada: sí. Madera cruda, pisos encerados y piedra sin sellar: solo con aprobación. Tela solo si el material aguanta un pase ligero.</p></details>
+      <details><summary>¿Llevan productos?</summary><p>Sí. Vaporera, HEPA, químicos y paños. Tú no pones químicos.</p></details>
+      <details><summary>¿Es seguro con niños y mascotas?</summary><p>Usamos productos ecológicos / low-VOC. Aun así, encierra mascotas que persigan el equipo.</p></details>
+      <details><summary>¿Tengo que estar en casa?</summary><p>No, si hay acceso con caja o código.</p></details>
+      <details><summary>¿El interior del horno o el refri va incluido?</summary><p>Exteriores sí. Interiores son extra.</p></details>
+      <details><summary>¿Se habla español?</summary><p>Sí.</p></details>
+    </div>
+  </section>
+  <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Limpieza profunda refinada. Vapor incluido.</em></div></div></footer>
+  <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
+  <div class="sticky-book"><a class="btn gold" href="contact-es.html">Agendar visita</a></div>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
