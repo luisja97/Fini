@@ -62,7 +62,7 @@ nav.desk a { font-size: 13.5px; letter-spacing: .04em; color: var(--navy); }
   display: grid; align-items: end;
   background:
     linear-gradient(180deg, rgba(11,28,36,.15) 0%, rgba(11,28,36,.72) 100%),
-    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=80") center/cover;
+    url("images/hero.jpg") center/cover;
   color: var(--white);
   padding: 120px 0 64px;
 }
@@ -169,7 +169,7 @@ footer.site em { color: var(--gold-2); font-style: italic; }
   padding: 72px 0 20px;
   background:
     linear-gradient(180deg, rgba(11,28,36,.45), rgba(11,28,36,.55)),
-    url("https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=80") center/cover;
+    url("images/bath.jpg") center/cover;
   color: var(--white);
 }
 .page-hero h2, .page-hero .section-lead { color: var(--white); }
