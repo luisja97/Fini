@@ -318,3 +318,29 @@ body, header.site, .lang-card, nav.desk.open {
   background-color: #f7f4ee;
 }
 header.site { background: rgba(247,244,238,.92); }
+:root {
+  --cream: #f7f4ef;
+  --paper: #fcfbf8;
+  --navy: #2f3a36;
+  --gold: #b08a4a;
+  --gold-2: #cbb58a;
+}
+body { background: #f7f4ef; }
+.topbar, .stats, .band, footer.site {
+  background: #f7f4ef;
+  color: #2a2e2b;
+}
+.topbar { color: #8a7a58; }
+.stats strong, footer.site em { color: #b08a4a; }
+.stats span, .band .section-lead, footer.site { color: #6a706c; }
+.band h2, footer.site strong { color: #2f3a36; }
+.hero {
+  background:
+    linear-gradient(180deg, rgba(247,244,239,.1), rgba(47,58,54,.4)),
+    url("images/hero.jpg") center/cover;
+}
+.btn { border-radius: 2px; }
+.btn.gold {
+  background: linear-gradient(180deg, #d4b56a, #b08a4a);
+  color: #16110a !important;
+}
