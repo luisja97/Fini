@@ -32,7 +32,7 @@
         <a href="reviews-es.html">Reseñas</a>
         <a href="about-es.html">Nosotros</a>
         <a href="contact-es.html">Contacto</a>
-        <a href="services.html" onclick="localStorage.setItem('fino-lang','en')">English</a>
+        <a href="services.html" onclick="event.preventDefault();finoSetLang('en')">English</a>
         <a class="btn" href="contact-es.html">Agendar visita</a>
       </nav>
     </div>
@@ -138,6 +138,7 @@
   <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
   <div class="sticky-book"><a class="btn gold" href="contact-es.html">Agendar visita</a></div>
   <script src="lang.js"></script>
+  <script src="img-fallback.js"></script>
   <script src="nav.js"></script>
 </body>
 </html>

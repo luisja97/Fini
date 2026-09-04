@@ -34,7 +34,7 @@
         <a href="reviews.html">Reviews</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="index-es.html" onclick="localStorage.setItem('fino-lang','es')">Español</a>
+        <a href="index-es.html" onclick="event.preventDefault();finoSetLang('es')">Español</a>
         <a class="btn" href="contact.html">Book a walkthrough</a>
       </nav>
     </div>
@@ -82,6 +82,7 @@
   <footer class="site"><div class="wrap"><div><strong>Fino Home Detail</strong><em>Refined deep cleaning. Steam included.</em></div></div></footer>
   <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
   <script src="lang.js"></script>
+  <script src="img-fallback.js"></script>
   <script src="nav.js"></script>
 </body>
 </html>

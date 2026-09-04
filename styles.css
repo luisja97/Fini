@@ -216,3 +216,45 @@ footer.site em { color: var(--gold-2); font-style: italic; }
   .split img, .film img { height: 260px; }
   .hero { min-height: 78vh; padding-top: 80px; }
 }
+
+
+body.nav-open { overflow: hidden; }
+body.nav-open .sticky-book { display: none; }
+
+.img-ph {
+  height: 220px;
+  background: linear-gradient(160deg, #1a3a42, #0b1c24);
+}
+
+@media (max-width: 900px) {
+  .topbar { font-size: 10px; letter-spacing: .08em; padding: 7px 10px; }
+  header.site { position: sticky; }
+  nav.desk.open {
+    z-index: 60;
+    max-height: calc(100vh - 78px);
+    overflow: auto;
+    gap: 4px;
+  }
+  nav.desk.open a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  nav.desk.open .btn { width: 100%; margin-top: 10px; border-radius: 999px; }
+  .hero { min-height: auto; padding: 36px 0 48px; }
+  .hero h1 { font-size: 44px; }
+  .stats article { border-right: 0; border-bottom: 1px solid rgba(232,215,168,.15); }
+  .sticky-book {
+    display: block;
+    left: 12px;
+    right: 12px;
+    bottom: calc(18px + env(safe-area-inset-bottom));
+    padding-bottom: 52px;
+  }
+  .sticky-book .btn { min-height: 48px; }
+}
+
+@media (min-width: 901px) {
+  .sticky-book { display: none !important; }
+}

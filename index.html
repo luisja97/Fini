@@ -43,7 +43,7 @@
         <a href="reviews.html">Reviews</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="index-es.html" onclick="localStorage.setItem('fino-lang','es')">Español</a>
+        <a href="index-es.html" onclick="event.preventDefault();finoSetLang('es')">Español</a>
         <a class="btn" href="contact.html">Book a walkthrough</a>
       </nav>
     </div>
@@ -95,7 +95,7 @@
           <figcaption>Kitchen seams</figcaption>
         </figure>
         <figure>
-          <img alt="Linen bed" src="https://images.unsplash.com/photo-1616594039964-4d9287044b4c?auto=format&fit=crop&w=900&q=80" />
+          <img alt="Linen bed" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80" />
           <figcaption>Rooms, reset</figcaption>
         </figure>
       </div>
@@ -121,11 +121,11 @@
       <h2>Deep first. Then recurring.</h2>
       <div class="grid-3">
         <article class="card photo">
-          <img alt="Deep clean" src="https://images.unsplash.com/photo-1484154216820-a92b223a3d14?auto=format&fit=crop&w=900&q=80" />
+          <img alt="Deep clean" src="https://images.unsplash.com/photo-1556912173-3d64ba27d4d4?auto=format&fit=crop&w=900&q=80" />
           <div class="pad"><h3>Deep clean + steam</h3><p>The reset: whole home, kitchen exteriors, baths, laundry, steam.</p></div>
         </article>
         <article class="card photo">
-          <img alt="Recurring" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" />
+          <img alt="Recurring" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" />
           <div class="pad"><h3>Recurring</h3><p>Biweekly or monthly after the deep. Lighter visit, same standard.</p></div>
         </article>
         <article class="card photo">
@@ -183,6 +183,7 @@
   </footer>
   <div class="sticky-book"><a class="btn gold" href="contact.html">Book a walkthrough</a></div>
   <script src="lang.js"></script>
+  <script src="img-fallback.js"></script>
   <script src="nav.js"></script>
 </body>
 </html>
