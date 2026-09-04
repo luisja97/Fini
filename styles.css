@@ -258,3 +258,37 @@ body.nav-open .sticky-book { display: none; }
 @media (min-width: 901px) {
   .sticky-book { display: none !important; }
 }
+:root {
+  --gold: #c4a056;
+  --gold-2: #ead9b0;
+  --gold-line: rgba(196, 160, 86, .45);
+}
+header.site {
+  border-bottom: 1px solid var(--gold-line);
+  background: rgba(251,247,240,.92);
+}
+.kicker {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gold);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.btn.gold {
+  background: linear-gradient(180deg, #e0c57a, #c4a056);
+  color: #1a1408 !important;
+  box-shadow: 0 8px 24px rgba(196,160,86,.28);
+}
+.btn { border-radius: 2px; letter-spacing: .12em; }
+.hero, .stats, footer.site { border-color: var(--gold-line); }
+.stats { border-top: 1px solid var(--gold-line); border-bottom: 1px solid var(--gold-line); }
+.split img, .film figure, .card.photo img {
+  outline: 1px solid var(--gold-line);
+  outline-offset: -1px;
+}
+.step, .card, blockquote, form, .lang-card {
+  border: 1px solid var(--gold-line);
+  border-radius: 2px;
+}
+.lang-card { border: 1px solid var(--gold); }
+.areas span { border-radius: 2px; }
