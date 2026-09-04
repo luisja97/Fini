@@ -1,5 +1,4 @@
 (function () {
-  const KEY = "fino-lang";
   const overlay = document.getElementById("lang-gate");
   const here = (location.pathname.split("/").pop() || "index.html");
   const isEs = here.indexOf("-es") !== -1;
@@ -26,21 +25,18 @@
   }
 
   function go(lang) {
-    localStorage.setItem(KEY, lang);
-    if ((lang === "es" && !isEs) || (lang === "en" && isEs)) {
-      location.href = dest(lang);
-    } else if (overlay) overlay.hidden = true;
+    localStorage.setItem("fino-lang", lang);
+    if ((lang === "es" && !isEs) || (lang === "en" && isEs)) location.href = dest(lang);
+    else if (overlay) overlay.hidden = true;
   }
-
   window.finoSetLang = go;
 
-  if (overlay) {
-    const saved = localStorage.getItem(KEY);
-    if (!saved) overlay.hidden = false;
-    else overlay.hidden = true;
+  if (!overlay) return;
+  const saved = localStorage.getItem("fino-lang");
+  if (!saved) overlay.hidden = false;
+  else overlay.hidden = true;
 
-    overlay.querySelectorAll("[data-lang]").forEach((btn) => {
-      btn.addEventListener("click", function () { go(btn.getAttribute("data-lang")); });
-    });
-  }
+  overlay.querySelectorAll("[data-lang]").forEach(function (btn) {
+    btn.addEventListener("click", function () { go(btn.getAttribute("data-lang")); });
+  });
 })();
