@@ -309,3 +309,12 @@ body.nav-open .sticky-book { display: none; }
 @media (min-width: 901px) {
   .sticky-book { display: none !important; }
 }
+:root {
+  --cream: #f7f4ee;
+  --paper: #fbfaf6;
+  --line: #e8e2d6;
+}
+body, header.site, .lang-card, nav.desk.open {
+  background-color: #f7f4ee;
+}
+header.site { background: rgba(247,244,238,.92); }
